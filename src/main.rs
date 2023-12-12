@@ -6,6 +6,7 @@
 
 use core::panic::PanicInfo;
 mod vga_buffer;
+mod serial;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
