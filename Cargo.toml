@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2018"
 author = ["Leo Kim <leobkkim@gmail.com>"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package.metadata.bootimage]
+test-args = ["-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]
 
 [dependencies]
 bootloader = "0.9.23"
